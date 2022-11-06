@@ -1,7 +1,9 @@
 <template>
     <v-app>
         <v-main>
-            <router-view/>
+            <v-container>
+                <router-view/>
+            </v-container>
         </v-main>
     </v-app>
 </template>
@@ -18,9 +20,14 @@ name: 'App',
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     * {
         padding: 0px;
         margin: 0px;
     }
+    #app {
+        background: url('@/assets/images/main.png');
+    }
+    
+    
 </style>
